@@ -303,13 +303,14 @@ a {
   margin-bottom: 12px;
 }
 
-/* "Домой" for patient screens: fixed on the right edge, about a third of the
-   way up — where a right thumb rests on a one-handed grip. Also reachable by a
-   pull-in swipe from the right edge (see BackLink.tsx). */
+/* "Домой" for patient screens: fixed low on the right edge, just above where a
+   messenger keeps its "jump to top" button, so a right thumb reaches it on a
+   one-handed grip. Also reachable by a pull-in swipe from the right edge
+   (see BackLink.tsx). */
 .patient-home-btn {
   position: fixed;
   right: 12px;
-  bottom: clamp(64px, 19%, 220px);
+  bottom: clamp(48px, 12%, 150px);
   z-index: 30;
   display: inline-flex;
   align-items: center;
