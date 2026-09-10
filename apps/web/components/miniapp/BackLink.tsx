@@ -5,9 +5,10 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { usePatientHomeHref } from "@/lib/patientPortal";
 
-// "Домой" lives on the right edge, about a third of the way up from the bottom
-// — where a right thumb rests on a one-handed grip. It is also reachable by a
-// pull-in swipe: start within a few mm of the right edge and drag left.
+// "Домой" lives low on the right edge, roughly where a messenger keeps its
+// "jump to top" button — within reach of a right thumb on a one-handed grip.
+// It is also reachable by a pull-in swipe: start within a few mm of the right
+// edge and drag left.
 // The edge-start requirement keeps this from clashing with content swipes
 // (e.g. the check-in wizard changing steps).
 const EDGE_START_PX = 28;
